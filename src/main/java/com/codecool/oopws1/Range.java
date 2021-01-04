@@ -9,6 +9,15 @@ public class Range {
     Range() {
     }
 
+    Range(int range) {
+        if (range > 0) {
+            this.start = 0;
+            this.end = range;
+        } else {
+            System.out.println("Invalid value. Range must be bigger than 0");
+        }
+    }
+
     Range(int start, int end) {
         if (end > start) {
             this.start = start;
