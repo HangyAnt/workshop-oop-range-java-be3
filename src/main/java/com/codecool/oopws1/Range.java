@@ -14,7 +14,7 @@ public class Range {
             this.start = start;
             this.end = end;
         } else {
-            System.out.println("Invalid values.");
+            System.out.println("Invalid values. Object created with default values (0, 0)");
         }
     }
 
@@ -41,4 +41,9 @@ public class Range {
     int getEnd() {
         return this.end;
     }
+
+    int getLength() {
+        return this.end - this.start;
+    }
+
 }

@@ -4,8 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         Range range1 = new Range(5, 10);
-        range1.setStart(15);
-        range1.setEnd(1);
+        System.out.println("range1 start: " + range1.getStart());
+        System.out.println("range1 end: " + range1.getEnd());
+        range1.setStart(15); // Invalid value.
+        range1.setEnd(1); // Invalid value.
         System.out.println("range1 start: " + range1.getStart());
         System.out.println("range1 end: " + range1.getEnd());
         Range range2 = new Range();
@@ -13,6 +15,8 @@ public class Main {
         range2.setStart(10);
         System.out.println("range2 start: " + range2.getStart());
         System.out.println("range2 end: " + range2.getEnd());
+        System.out.println("range1 length: " + range1.getLength());
+        System.out.println("range2 length: " + range2.getLength());
     }
 
 }
