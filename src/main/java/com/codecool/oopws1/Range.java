@@ -34,7 +34,7 @@ public class Range {
         if (this.end > start) {
             this.start = start;
         } else {
-            System.out.println("\"Start\" must be smaller than \"end\". Try to set \"end\" first. Nothing changed.");
+            System.out.println("\"Start\" must be smaller than \"end\". Nothing's changed. Try to set \"end\" first.");
         }
     }
 
@@ -42,7 +42,7 @@ public class Range {
         if (end > this.start) {
             this.end = end;
         } else {
-            System.out.println("\"End\" must be bigger than \"start\". Nothing changed.");
+            System.out.println("\"End\" must be bigger than \"start\". Nothing's changed.");
         }
     }
 
