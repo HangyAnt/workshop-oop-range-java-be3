@@ -17,7 +17,7 @@ public class Main {
         System.out.println("range2 end: " + range2.getEnd());
         System.out.println("range1 length: " + range1.getLength());
         System.out.println("range2 length: " + range2.getLength());
-        Range range3 = new Range(105);
+        Range range3 = new Range(-105);
         System.out.println("range3 start: " + range3.getStart());
         System.out.println("range3 end: " + range3.getEnd());
     }

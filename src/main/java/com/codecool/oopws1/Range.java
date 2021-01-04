@@ -7,6 +7,7 @@ public class Range {
     private int end;
 
     Range() {
+        System.out.println("Object created with default values (start: 0, end: 0)");
     }
 
     Range(int range) {
@@ -14,7 +15,8 @@ public class Range {
             this.start = 0;
             this.end = range;
         } else {
-            System.out.println("Invalid value. Range must be bigger than 0");
+            System.out.println("Invalid value. Range must be bigger than 0. Object created with default values" +
+                    " (start: 0, end: 0)");
         }
     }
 
@@ -23,7 +25,8 @@ public class Range {
             this.start = start;
             this.end = end;
         } else {
-            System.out.println("Invalid values. Object created with default values (0, 0)");
+            System.out.println("Invalid values. \"End\" must be bigger than \"start\". Object created with default" +
+                    " values (start: 0, end: 0)");
         }
     }
 
@@ -31,7 +34,7 @@ public class Range {
         if (this.end > start) {
             this.start = start;
         } else {
-            System.out.println("\"Start\" must be smaller than \"end\". Try to set \"end\" first.");
+            System.out.println("\"Start\" must be smaller than \"end\". Try to set \"end\" first. Nothing changed.");
         }
     }
 
@@ -39,7 +42,7 @@ public class Range {
         if (end > this.start) {
             this.end = end;
         } else {
-            System.out.println("\"End\" must be bigger than \"start\".");
+            System.out.println("\"End\" must be bigger than \"start\". Nothing changed.");
         }
     }
 
